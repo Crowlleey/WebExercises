@@ -23,6 +23,10 @@ body{
     margin-left: 5%;
 }
 
+p{
+    margin-left: 2%;
+}
+
 p.xx-small{
     font-size: xx-small
 }
