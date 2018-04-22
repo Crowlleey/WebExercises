@@ -1,0 +1,26 @@
+@font-face {
+    font-family: fonte_estilosa;
+    src: url("../Source/Fonts/Wunderland.otf");
+}
+
+@font-face{
+    font-family: fonte_sf;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+h1.estilosa{
+    font-family: fonte_estilosa;
+    font-size: 50px;    
+}
+
+h1.sf{
+    /* font-family: fonte_sf; */
+    font-family: fonte_sf;
+    font-size: 50px;   
+}
+
+body{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
