@@ -14,7 +14,6 @@ h1.estilosa{
 }
 
 h1.sf{
-    /* font-family: fonte_sf; */
     font-family: fonte_sf;
     font-size: 50px;   
 }
@@ -22,5 +21,17 @@ h1.sf{
 body{
     margin-top: 3%;
     margin-left: 5%;
+}
+
+p.xx-small{
+    font-size: xx-small
+}
+
+p.medium{
+    font-size: medium
+}
+
+p.xx-large{
+    font-size: xx-large;
 }
 
