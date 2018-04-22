@@ -19,12 +19,13 @@ h1.sf{
 }
 
 body{
-    margin-top: 3%;
     margin-left: 5%;
 }
 
 p{
     margin-left: 2%;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
 p.xx-small{
@@ -37,5 +38,31 @@ p.medium{
 
 p.xx-large{
     font-size: xx-large;
+    text-indent: 10px
 }
 
+p.condensed{
+    font-stretch: ultra-condensed;
+}
+
+p.normal{
+    font-stretch: normal;
+}
+
+p.expanded{
+    font-stretch: ultra-expanded
+}
+
+div{
+    color: gray;
+    text-indent: 10px;
+    text-align: justify
+}
+
+#colorblue{
+    color: blue
+}
+
+.red{
+    color: red;
+}
