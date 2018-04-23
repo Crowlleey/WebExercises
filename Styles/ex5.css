@@ -31,7 +31,7 @@ div.max-size{
 }
 
 .boxshadow{
-    box-shadow: 10px 10px 5px #000000;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 div.box{
@@ -41,16 +41,11 @@ div.box{
     height: 80px;
 }
 
-.letter-format{
-    font-size: 22px;
-    line-height: 79px;
-    text-shadow: rgba(222, 55, 23, 1)
-}
-
 h6{
     font-size: 22px;
     line-height: 79px;
     color: paleturquoise;  
+    text-shadow: 12px 10px 5px #888888;
 }
 
 
