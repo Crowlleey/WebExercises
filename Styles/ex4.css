@@ -53,7 +53,7 @@ p.expanded{
     font-stretch: ultra-expanded
 }
 
-div{
+p.justify{
     color: gray;
     text-indent: 10px;
     text-align: justify
