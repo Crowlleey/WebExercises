@@ -2,13 +2,16 @@ body{
     margin-left: 7%;
 }
 
-h1{
-    color: gray;
+h1.blue{
+    color: pink;
     margin-left: 10%;
     position: fixed;
 }
 
 header{
+    color: aquamarine;
+    
+
     position: absolute;
 
     top: 70px;
@@ -35,9 +38,22 @@ aside{
     display: flex;
 }
 
-*{
-    text-align: center;
-    color: white;
+article{
+    position: absolute;
+
+    top: 250px;
+    left: 330px;
+    
+    height: 650px;
+    width: 80.1%;
+    margin: 0,10px ,0, 10px;
+    background-color: #d36a08;
+
+
+    display:flex;
+    align-items:center; 
+    justify-content:center;
+
 }
 
 
@@ -47,4 +63,8 @@ div.border{
     width: 300px;
     border: 2px solid black;
     border-radius: 30px;
-  }
+}
+
+img{
+      float: left;  
+}
