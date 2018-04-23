@@ -47,9 +47,13 @@ h6{
     color: paleturquoise;  
     text-shadow: 12px 10px 5px #888888;
 }
-
-
-
+div.overflow {
+    overflow-x: scroll;
+    background-color: #eee;
+    width: 150px;
+    height: 50px;
+    border: 1px dotted black;
+}
 #displaya{
     text-align: center;
     display: block;
