@@ -22,6 +22,15 @@ div.border{
     border-radius: 30px;
   }
 
+div.max-size{
+    background-color: aqua;
+    border-radius: 30px;
+    width: 100%;
+    height: 30%;
+    max-width: 1000px;
+
+}
+
 #displaya{
     text-align: center;
     display: block;
