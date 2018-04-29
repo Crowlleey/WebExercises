@@ -1,0 +1,34 @@
+h1{
+    color: blue;
+}
+
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orchid;
+}
+
+ul{
+    border-style: groove;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 50%;
+    padding-top: 1px;
+    padding-bottom: 15px;
+}
+
+li.inside{
+    list-style: inside;
+}
+
+ul.linked{
+    list-style-image: url("https://treinaweb-cursos.s3.amazonaws.com/prod/5/arquivos/seta.gif");
+}
+
+ul.downloaded{
+    list-style-image:url("../Images/ok.png");
+}
+
+#reference{
+
+    margin-top: 10px;   
+}
