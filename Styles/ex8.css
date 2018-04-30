@@ -11,6 +11,7 @@ table, th, td, tr{
  td{
      align-content: center;
  }
+ 
  table{
     margin-top: 2%;
     margin-left: 2%;
@@ -23,9 +24,7 @@ table, th, td, tr{
 td:hover{
     background-color: springgreen;
 }
-td:focus{
-    background-color: slateblue;
-}
+
 caption {
     caption-side: bottom;
     background-color: darkslategrey;
