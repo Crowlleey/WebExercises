@@ -1,0 +1,20 @@
+h1{
+    color: red;;
+}
+
+h2{
+	color: pink;
+}
+
+h3{
+    color: red;
+}
+
+input { 
+    text-align: right; 
+}
+
+div.calculator{
+    margin-top: 10px;
+    margin-left: 50px;
+}

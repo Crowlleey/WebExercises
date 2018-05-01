@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java Script</title>
+
+    <link rel="stylesheet" href="../bootstrap-4.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Styles/ex9.css?$$REVISION$$"/>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <table>
+            <input type="text" id="displayCalc" value="0" readonly>
+            <tr class="mar">
+                <td><button type="button" class="btn btn-success" id="7" onclick="addNumber(7)">7</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(8)">8</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(9)">9</button></td>
+                <td><button type="button" class="btn btn-danger" onclick="eraseLast()"><</button></td>
+            </tr>
+            <tr class="mar">
+                <td><button type="button" class="btn btn-success" onclick="addNumber(4)">4</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(5)">5</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(6)">6</button></td>
+                <td><button type="button" class="btn btn-danger" onclick="erase()">C</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(1)">1</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(2)">2</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(3)">3</button></td>
+
+                <td><button type="button" class="btn btn-success" onclick="operation('/')">./</button></td>
+                <td><button type="button" class="btn btn-success" onclick="operation('x')">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-success" onclick="operation('+')">+</button></td>
+                <td><button type="button" class="btn btn-success" onclick="addNumber(0)">0</button></td>
+                <td><button type="button" class="btn btn-success" onclick="operation('-')">-</button></td>
+                <td><button type="button" class="btn btn-success" onclick="result()">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+<script type="text/javascript" src="../Scripts/exercise9.js?$$REVISION$$"></script>
+</html>
