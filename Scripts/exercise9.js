@@ -1,5 +1,3 @@
-
-
 function addNumber(numberToAdd){
     var valueCalc = document.getElementById("displayCalc").value;
 
@@ -12,7 +10,7 @@ function addNumber(numberToAdd){
     document.getElementById("displayCalc").value = valueCalc;
 }
 
-var cache = 0;
+var cache = 0.0;
 var lastCalc = '';
 
 function sum(){
@@ -22,11 +20,31 @@ function sum(){
     document.getElementById("displayCalc").value = 0;
 }
 
+function operation(operator){   
+    
+   
+    switch(operator){
+        case '+': 
+            cache = parseFloat(display());
+            lastCalc = '+';
+            break;
+        case '-': 
+            cache = display();
+            lastCalc = '-';
+            break;
+    }    
+    lastCalc = operator;
+    setDisplay("0");
+}
+
 function result(){
+    
     if(lastCalc == '+'){
-        cache = cache  + parseFloat(document.getElementById("displayCalc").value); 
+        cache = cache + parseFloat(display());  
+    }else if(lastCalc == '-'){      
+        cache = cache - parseFloat(display());
     }
-    document.getElementById("displayCalc").value = cache;
+    setDisplay(cache);
 }
 
 function saveInCash(value){
@@ -41,9 +59,11 @@ function erase(){
 function eraseLast(){
     // var display = document.getElementById("displayCalc").value
     if(display().length == 1){
+        cache = 0;
         setDisplay("0");
     }else if(display() != 0){
-        setDisplay(display().substr(1,(display().length - 1)));
+        var toShow = display().substr(0,display().length - 1);
+        setDisplay(toShow);
     }
 }
 
@@ -54,51 +74,3 @@ function display(){
 function setDisplay(value){
     document.getElementById("displayCalc").value = value;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById ("btScream").addEventListener ("click", resetEmotes, false);
-
-// var o = Array();
-
-// for (let index = 0; index < 10000; index++) {
-//     o.push(index)
-// }
-
-// for (const key in o) {
-//     document.write(key + " value <br/>" );
-// }
