@@ -10,16 +10,11 @@ h3{
     color: red;
 }
 
-table{
-    margin-left: 60px;
-}
-
 input { 
     text-align: right; 
 }
 
-body{
-    margin-top: 20px;
+div.calculator{
+    margin-top: 10px;
     margin-left: 50px;
 }
-

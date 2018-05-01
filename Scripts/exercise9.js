@@ -21,8 +21,7 @@ function sum(){
 }
 
 function operation(operator){   
-    
-   
+
     switch(operator){
         case '+': 
             cache = parseFloat(display());
@@ -32,17 +31,30 @@ function operation(operator){
             cache = display();
             lastCalc = '-';
             break;
+        case '/':
+            cache = display();
+            lastCalc = '/';
+            break;
+        case 'x':
+            cache = display();
+            lastCalc = 'x';
+            break;
     }    
-    lastCalc = operator;
+    // lastCalc = operator;
     setDisplay("0");
 }
 
 function result(){
-    
+   console.log(lastCalc);
+   
     if(lastCalc == '+'){
         cache = cache + parseFloat(display());  
     }else if(lastCalc == '-'){      
         cache = cache - parseFloat(display());
+    }else if(lastCalc == '/'){
+        cache = cache / parseFloat(display());
+    }else if(lastCalc = 'x'){
+        cache = cache * parseFloat(display());
     }
     setDisplay(cache);
 }
